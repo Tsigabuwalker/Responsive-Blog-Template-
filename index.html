@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="post" id="post-1">
+        <h2>Blog Post Title 1</h2>
+        <p>This is the content of the first blog post.</p>
+        <button onclick="toggleComments('comments-1')">Show Comments</button>
+        <div class="comments" id="comments-1" style="display:none;">
+            <h3>Comments</h3>
+            <ul id="comments-list-1"></ul>
+            <input type="text" id="comment-input-1" placeholder="Add a comment">
+            <button onclick="addComment(1)">Submit</button>
+        </div>
+    </div>
+    <div class="post" id="post-2">
+        <h2>Blog Post Title 2</h2>
+        <p>This is the content of the second blog post.</p>
+        <button onclick="toggleComments('comments-2')">Show Comments</button>
+        <div class="comments" id="comments-2" style="display:none;">
+            <h3>Comments</h3>
+            <ul id="comments-list-2"></ul>
+            <input type="text" id="comment-input-2" placeholder="Add a comment">
+            <button onclick="addComment(2)">Submit</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Blog. All rights reserved.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
